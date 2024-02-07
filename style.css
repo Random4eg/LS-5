@@ -8,7 +8,7 @@ a {
 }
 html,
 body {
-  min-width: 100%;
+  min-height: 100%;
 }
 body {
   font-family: "Poppins", sans-serif;
@@ -35,7 +35,7 @@ body {
   gap: 32px;
 }
 .header-logo:hover {
-  scale: 1.1;
+  filter: invert(100%);
   transition: 1s all ease-in-out;
 }
 .header-btn__link:hover {
@@ -76,8 +76,6 @@ body {
 }
 .header-btn__link {
   display: inline-block;
-  border: 0;
-  outline: 0;
   cursor: pointer;
   padding: 16px 24px;
   border-radius: 999px;
@@ -108,6 +106,7 @@ body {
   margin-bottom: 32px;
 }
 .title:hover {
+  transform: translatex(-4px) scale(1.1);
   transition: 0.2s all ease-in-out;
 }
 /* desc */
@@ -119,13 +118,12 @@ body {
   margin-bottom: 80px;
 }
 .desc:hover {
+  transform: translatex(-4px) scale(1);
   transition: 0.2s all ease-in-out;
 }
 /* learn */
 .btn-learn {
   display: inline-block;
-  border: 0;
-  outline: 0;
   cursor: pointer;
   border-radius: 999px;
   border: 2px solid #fc40f4;
@@ -136,7 +134,7 @@ body {
   min-width: 239px;
 }
 .hover_effect {
-  background-color: yellow;
+  background: rgba(249, 253, 0, 0.61);
   display: none;
   font-size: 18px;
   font-weight: bold;
@@ -160,13 +158,17 @@ body {
   gap: 32px;
   justify-content: center;
 }
+.loader:hover {
+  transform: translatex(-4px) scale(1.1);
+  transition: 0.2s all ease-in-out;
+}
 @media screen and (max-width: 992px) {
   .header-btn {
     display: none;
     padding: 50px 20px;
   }
   .header-btn__small {
-    display: inline;
+    display: inline-block;
     cursor: pointer;
     border-radius: 999px;
     background: linear-gradient(10deg, #e1e1e1 8.37%, #fff 9.95%);
